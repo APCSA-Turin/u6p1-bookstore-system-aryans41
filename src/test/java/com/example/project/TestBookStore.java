@@ -35,7 +35,6 @@ public class TestBookStore {
         IdGenerate.generateID();
         User u4 = new User("Alex",IdGenerate.getCurrentId());
         store.addUser(u1);store.addUser(u2);store.addUser(u3);store.addUser(u4);
-
         store.removeUser(u2);
         User[] expected = {u1,u3,u4,null,null,null,null,null,null,null};
         assertArrayEquals(expected, store.getUsers());

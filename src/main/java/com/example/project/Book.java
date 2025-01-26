@@ -2,29 +2,70 @@ package com.example.project;
 
 public class Book{
     //requires 5 attributes String title, String author, int yearPublished, String isbn, int quantity
+    private String title; 
+    private String author;
+    private int yearPublished; 
+    private String isbn;
+    private int quantity;
 
     //requires 1 constructor with 5 arguments that intitialize the attribtues of the class.
+    public Book (String title, String author, int yearPublished, String isbn, int quantity) {
+        this.title = title;
+        this.author = author;
+        this.yearPublished = yearPublished;
+        this.isbn = isbn;
+        this.quantity = quantity;
+    }
 
-    // public  getTitle() {}
+    /* the following methods are getter (return) and setter (void) methods that return the value of 
+    each of the instance variables of the Book class and allows the user to set those instant variables 
+    to a new value that is passed in as the parameter */
 
-    // public setTitle() {}
+    public String getTitle() {
+        return title;
+    }
 
-    // public getAuthor() {}
+    public void setTitle(String newTitle) {
+        title = newTitle;
+    }
 
-    // public setAuthor() {}
+    public String getAuthor() {
+        return author;
+    }
 
-    // public getYearPublished() {}
+    public void setAuthor(String newAuthor) {
+        author = newAuthor;
+    }
 
-    // public setYearPublished() {}
+    public int getYearPublished() {
+        return yearPublished;
+    }
 
-    // public getIsbn() {}
+    public void setYearPublished(int newYearPublished) {
+        yearPublished = newYearPublished;
+    }
 
-    // public void setIsbn() {}
+    public String getIsbn() {
+        return isbn;
+    }
 
-    // public int getQuantity() {}
+    public void setIsbn(String newIsbn) {
+        isbn = newIsbn;
+    }
 
-    // public void setQuantity() {}
+    public int getQuantity() {
+        return quantity;
+    }
 
-    // public  bookInfo(){} //returns "Title: [], Author: [], Year: [], ISBN: [], Quantity: []"
+    public void setQuantity(int newQuantity) {
+        quantity = newQuantity; 
+    }
+
+    /* This method returns the information regarding a specfic object of the Book class utilzing the 
+    instance variables in the format "Title: [], Author: [], Year: [], ISBN: [], Quantity: []" */ 
+    
+    public String bookInfo(){
+        return "Title: " + title + ", " + "Author: " + author  + ", "  + "Year: " + yearPublished  + ", " + "ISBN: " + isbn  + ", " + "Quantity: " + quantity; 
+    } 
        
 }
