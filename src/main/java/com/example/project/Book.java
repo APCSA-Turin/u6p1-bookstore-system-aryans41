@@ -67,5 +67,4 @@ public class Book{
     public String bookInfo(){
         return "Title: " + title + ", " + "Author: " + author  + ", "  + "Year: " + yearPublished  + ", " + "ISBN: " + isbn  + ", " + "Quantity: " + quantity; 
     } 
-       
 }
