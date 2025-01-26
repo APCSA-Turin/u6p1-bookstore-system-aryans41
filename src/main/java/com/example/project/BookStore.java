@@ -41,7 +41,6 @@ public class BookStore{
     /* This method removes a User type object (inputted as parameter) from the users' array 
     list and then consolidates the list, so that it moves null values to the end of the array. 
     NOTE: The length of the users' list is always unchanged */
-    
     public void removeUser(User user){
         /* finds the inputted User object in the users' array by iterating through the array 
         and removes it by setting it to null */
@@ -85,7 +84,6 @@ public class BookStore{
      
     /* This method inserts a Book object inputted by the user into a specified index of the books' array. 
        This INCREASES the length of the array by one. */ 
-
     public void insertBook(Book book, int index){
             // initializes insertOne to a Book array with length that is one greater than the original
             Book[] insertOne = new Book[books.length + 1];
