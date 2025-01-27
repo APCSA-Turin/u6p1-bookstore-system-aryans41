@@ -57,21 +57,6 @@ public class User{
         return result;
     } 
 
-    public void addBook (Book book) {
-        boolean spaceFound = false;
-        int space = 6;
-        while (spaceFound == false) {
-            int emptySpace = 0; 
-            for (int i = 0; i < bookList.length; i++) {
-                if (bookList[i] == null) {
-                    spaceFound = true;
-                    space = i;
-                }
-            }
-        } 
-        bookList[space] = book; 
-    }
-
     /* This method returns the information regarding a specfic User object of the User class utilzing the 
     instance variables in the format "Name: []\nID: []\nBooks:\n[]". This helps create a profile for
     an indivdual, that contains the name, Id, and the Book record of the user */
